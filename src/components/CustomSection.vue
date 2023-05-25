@@ -33,4 +33,10 @@ defineProps<{
     font-size: 48px;
     font-weight: 600;
 }
+
+@media (max-width: 600px) {
+    .section-title__text {
+        font-size: 32px;
+    }
+}
 </style>

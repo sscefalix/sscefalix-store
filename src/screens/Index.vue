@@ -6,7 +6,7 @@ import CustomSection from "../components/CustomSection.vue";
 
 <template>
   <div class="hero line">
-    <div class="websites hero-item">
+    <div class="hero-item">
       <main class="text">
         <h1 class="title">
           Создаём <span class="orange">продающие</span> и <span class="orange">эффективные</span> сайты
@@ -18,7 +18,7 @@ import CustomSection from "../components/CustomSection.vue";
       <Button to="/order">Заказать сайт</Button>
     </div>
     <div class="and"><h1 class="background-title">и</h1></div>
-    <div class="bots hero-item">
+    <div class="hero-item">
       <main class="text">
         <h1 class="title right">
           Создаём <span class="orange">работоспособных</span> и <span class="orange">полезных</span> ботов
@@ -261,5 +261,24 @@ import CustomSection from "../components/CustomSection.vue";
 .details li span {
     font-size: 18px;
     font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .line {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .services {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .service {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .stats {
+    flex-direction: column;
+  }
 }
 </style>
